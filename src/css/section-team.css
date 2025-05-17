@@ -1,0 +1,126 @@
+.container-team-general {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 64px 0;
+}
+
+.subtitle {
+    font-weight: 600;
+    line-height: 1.5;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.title {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 1.2;
+    letter-spacing: 0.01em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.paragraph-team {
+    font-weight: 400;
+    font-size: 16px;
+    
+    /* line-height: 26px; */
+    line-height: 1.6;
+    color: var(--color-scheme-4-text);
+    text-align: center;
+    padding-bottom: 48px;
+}
+
+.team-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 48px;
+    align-items: center;
+    
+}
+
+.team-member {
+    max-width: 343px;
+
+}
+
+.team-member-text {
+    padding-top: 20px;
+    text-align: center;
+}
+
+.team-description {
+    padding-top: 12px;
+}
+
+
+/*  Team section media queries */
+/* Tablet: 768px */
+@media screen and (min-width: 768px) {
+
+    .team-list {
+        display: flex;
+        flex-direction: row;
+        gap: 24px;
+        flex-wrap: wrap;
+        row-gap: 72px;
+        align-items: stretch;
+        justify-content: center;
+
+    }
+        .paragraph-team {
+            padding-bottom: 40px;   
+        }
+
+    .team-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 64px;
+
+    }
+    .team-member-text {
+            padding-top: 24px;
+    }
+    .title {
+            font-size: 52px;
+        }
+    .team-member {
+        flex: calc((704px - 24px) / 2);
+        height: 100%;
+        max-width: 340px;
+    }
+      .subtitle {
+        margin-bottom: 16px;
+      }
+          .fjfgjg {
+              padding: 40px 0;   }
+
+}
+
+
+/*  Desktop: 1336px */
+@media screen and (min-width: 1336px) {
+    .team-container {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+        gap: 64px;
+        
+    }
+        .container-team-general {
+            padding: 112px 0;
+            max-width: 1312px;
+        }
+    .team-member {
+        flex: calc((100% - 48px) / 3);
+        max-width: 421px;
+    }
+
+ 
+  
+}
