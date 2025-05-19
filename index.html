@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cabin:400&family=Roboto:400&family=Sarabun:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cabin:wght@400&family=Roboto:wght@400&family=Sarabun:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
 
@@ -18,16 +18,101 @@
     />
 
     <script type="module" crossorigin src="/yogabloom-website/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/yogabloom-website/assets/index-CJ9w4s0d.css">
+    <link rel="stylesheet" crossorigin href="/yogabloom-website/assets/index-C6I9TAbU.css">
   </head>
   <body>
-    <header class="header">
-  <div class="container">
-    <svg>
-      <use href="/yogabloom-website/assets/sprite-B_SY1GJM.svg#icon-chek"></use>
-    </svg>
+    <header class="header-page">
+  <div class="container header-container">
+    <div class="header-container-add">
+      <nav class="header-navigation">
+        <ul class="header-navigation-list">
+          <li class="navigation-list-item"></li>
+          <li class="navigation-list-item">
+            <a class="navigation-item-link" href="#team">Team</a>
+          </li>
+          <li class="navigation-list-item">
+            <a class="navigation-item-link" href="#testimonials"
+              >Testimonials</a
+            >
+          </li>
+          <li class="navigation-list-item">
+            <a class="navigation-item-link" href="#pricing">Prising</a>
+          </li>
+          <li class="navigation-list-item">
+            <a class="navigation-item-link" href="#contacts">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header-mob">
+        <!-- logo navbar -->
+        <button type="button" class="navbar-button" id="menuToggleBtn">
+          <svg class="navbar-svg" width="16" height="12">
+            <use id="menuIcon" href="../img/sprite.svg#icon-navbar"></use>
+          </svg>
+        </button>
+
+        <!-- logo yogabloom -->
+        <a class="logo-link" href="/src/index.html">
+          <svg class="logo-link-svg" width="83" height="23">
+            <use href="../img/sprite.svg#icon-yoga-bloom"></use>
+          </svg>
+        </a>
+        <!-- a-Join -->
+        <a class="link-join" href="#">
+          <span class="join-text">Join</span>
+          <span class="join-now-text">Join Now</span>
+        </a>
+      </div>
+    </div>
   </div>
 </header>
+
+<!-- navbar mobile menu -->
+<div class="navbar-menu" data-modal>
+  <div class="container header-container">
+    <div class="header-mob">
+      <button type="button" class="navbar-button" id="menuToggleBtn">
+        <svg class="navbar-svg" width="16" height="12">
+          <use id="menuIcon" href="../img/sprite.svg#icon-navbar"></use>
+        </svg>
+      </button>
+
+      <!-- logo yogabloom -->
+      <a class="logo-link" href="/src/index.html">
+        <svg class="logo-link-svg" width="83" height="23">
+          <use href="../img/sprite.svg#icon-yoga-bloom"></use>
+        </svg>
+      </a>
+      <!--a-Join -->
+
+      <a class="link-join" href="">
+        <span class="join-text">Join</span>
+        <span class="join-now-text">Join Now</span>
+      </a>
+    </div>
+    <nav class="navbar-navigation marking">
+      <ul class="navbar-list">
+        <li class="navbar-item">
+          <a class="navbar-link" href="#yoga-classes">Yoga Classes</a>
+        </li>
+        <li class="navbar-item">
+          <a class="navbar-link" href="#team">Team</a>
+        </li>
+        <li class="navbar-item">
+          <a class="navbar-link" href="#testimonials">Testimonials</a>
+        </li>
+        <li class="navbar-item">
+          <a class="navbar-link" href="#pricing">Prising</a>
+        </li>
+        <li class="navbar-item">
+          <a class="navbar-link" href="#contacts">Contacts</a>
+        </li>
+      </ul>
+    </nav>
+
+    <a class="navbar-link-join" href="">Join</a>
+  </div>
+</div>
 
 
     <main>
@@ -674,8 +759,66 @@
   </div>
 </section>
 
-      <section>
-  <div class="container"></div>
+      <section class="pricing-section">
+  <div class="container">
+    <p class="subheading">Affordable</h4>
+    <h2 class="heading">Pricing Plans</h2>
+    <p class="description">Choose the perfect plan for your yoga journey.</p>
+
+    <div class="pricing-container">
+      <!-- One Session -->
+      <div class="additional-container-for-price">
+        <article class="pricing-card">
+          <div>
+            <h3 class="h3tit">One Session</h3>
+            <p class="price">$10</p>
+            <ul class="ulontwo">
+              <li class="liil">✓ 1 group session</li>
+              <li class="liil">✓ 10% discount for next 2 sessions</li>
+              <li class="liil">✓ Community support group</li>
+            </ul>
+          </div>
+          <button class="butontwo" data-plan="One Session" data-price="$10">Join</button>
+        </article>
+        <!-- 8 Sessions -->
+        <article class="pricing-card">
+          <div>
+            <h3 class="h3tit">8 Sessions Package</h3>
+            <p class="price">$65</p>
+            <ul class="ulontwo">
+              <li class="liil">✓ 6 Group Sessions</li>
+              <li class="liil">✓ 2 Individual Sessions</li>
+              <li class="liil">✓ Community support group</li>
+            </ul>
+          </div>
+          <button class="butontwo" data-plan="8 Sessions Package" data-price="$65">Join</button>
+        </article>
+      </div>
+
+      <!-- 12 Sessions -->
+      <article class="pricing-card additional-style">
+          <h3 class="h3tit">12 Sessions Package</h3>
+          <p class="price">$80</p>
+            <ul class="ulontwo">
+              <li class="liil">✓ 8 Group Sessions</li>
+              <li class="liil">✓ 4 Individual Sessions</li>
+              <li class="liil">✓ Monthly yoga challenges</li>
+              <li class="liil">✓ Exclusive member discounts</li>
+              <li class="liil">✓ Community support group</li>
+            </ul>
+        <button class="butontwo" data-plan="12 Sessions Package" data-price="$80">Join</button>
+        <ul class="ulontwo">
+          <li class="liil">✓ 8 Group Sessions</li>
+          <li class="liil">✓ 4 Individual Sessions</li>
+          <li class="liil">✓ Monthly yoga challenges</li>
+          <li class="liil">✓ Exclusive member discounts</li>
+          <li class="liil">✓ Community support group</li>
+        </ul>
+        
+
+      </article>
+    </div>
+  </div>
 </section>
 
     </main>
@@ -731,6 +874,61 @@
     </div>
   </div>
 </footer>
+
+    <div class="backdrop-one" data-modal>
+  <div class="modal-container">
+    <div class="modal-content">
+      <button type="button" class="modal-close" data-modal-close>
+        <svg class="modal-close-svg" width="8" height="8">
+          <use href="">Х</use>
+        </svg>
+      </button>
+      <h2 class="modal-title">Join Now!</h2>
+      <p class="modal-plan">One Session</p>
+      <p class="modal-price">$10</p>
+      <form class="modal-form">
+        <div class="modal-field">
+          <label for="name" class="modal-label">Your Name</label>
+          <input
+            id="name"
+            type="text"
+            name="name"
+            class="modal-input"
+            placeholder="Liam"
+            required
+          />
+        </div>
+        <div class="modal-row">
+          <div class="modal-field">
+            <label for="email" class="modal-label">Email</label>
+            <input
+              id="email"
+              type="email"
+              name="email"
+              class="modal-input"
+              placeholder="hello@yogabloom.com"
+              required
+            />
+          </div>
+          <div class="modal-field">
+            <label for="phone" class="modal-label">Phone number</label>
+            <input
+              id="phone"
+              type="tel"
+              name="phone"
+              class="modal-input"
+              placeholder="+380 95 123 12 12"
+              required
+            />
+          </div>
+        </div>
+        <div class="button-wrapper">
+          <button type="submit" class="checkout-btn">Go to checkout</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
 
 
   </body>
